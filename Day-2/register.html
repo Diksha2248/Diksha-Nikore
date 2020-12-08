@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <fieldset>
+        <legend align="center">Registration Form</legend>
+    <table>
+        
+        <form action="gallery.html">
+            <tr>
+                <td>Enter Name:</td>
+                <td> <input type="text" name="username" placeholder="enter name" required></td>
+            </tr>
+        <tr>
+           <td> Enter password:</td>
+        <td> <input type="password" name="password" placeholder="Enter password"></td>
+           
+        </tr>
+        <tr>
+            <td>Enter Email:</td>
+            <td> <input type="email" name="mail" placeholder="enter mail"></td>
+
+        </tr>
+        <tr>
+            <td>Phone_Number:</td>
+            <td><input type="tel" name="phnnumber" pattern="[1-9]{10}" required></td>
+        </tr>
+            <tr>
+          <td> Technology: </td>
+
+          <td> <select name="Technology" multiple size="4">
+                <option value="">--select--</option>
+                <option value="">JS</option>
+                <option value="">HTML</option>
+                <option value="">Java</option>
+                <option value="">CSS</option>
+                <option value="">C</option>
+            </select></td>
+           </tr>
+           <tr> 
+               
+           <td>Qualification: </td>
+        <td><input type="checkbox" name="class" checked>B.E
+            <input type="checkbox" name="class">BCA
+            <input type="checkbox" name="class">B.COM
+            <input type="checkbox" name="class">MBBS</td>
+            </tr>
+            <tr>
+                <td><input type="button" name="register" value="register"></td>
+                <td><input type="button" name="reset" value="reset"></td>
+            </tr>
+        </form>
+    </table>
+</fieldset>
+</body>
+
+</html>
