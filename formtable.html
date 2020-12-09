@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <fieldset>
+        <legend align="center">Form</legend>
+        <table>
+            <form action="profile.html">
+                <tr>
+                    <td>Username:</td>
+                    <td><input type="text" name="fname" value="Diksha" readonly></td>
+                </tr>
+                <tr>
+                    <td>Name:</td>
+                    <td> <input type="text" name="username" placeholder="enter name" required></td>
+                </tr>
+                <tr>
+                    <td>Company:</td>
+                    <td><input type="text" name="company" value="DeekshaInfosystem" disabled></td>
+                </tr>
+                <tr>
+                    <td>Age:</td>
+                    <td><input type="number" name="age" required min="18" max="80" size="2"></td>
+                </tr>
+                <tr>
+                    <td>Phone_Number:</td>
+                    <td><input type="tel" name="phnnumber" pattern="[1-9]{10}" required></td>
+                </tr>
+                <tr>
+                    <td>Email:</td>
+                    <td> <input type="email" name="mail" placeholder="enter mail"></td>
+
+                </tr>
+                <tr>
+                    <td> Gender:</td>
+                    <td><input type="radio" name="gender" checked>Male
+                        <input type="radio" name="gender">Female </td>
+                </tr>
+                <tr>
+                    <td>Date:</td>
+                    <td><input type="date" name="date" min="2020-12-08" max="2025-12-30"></td>
+                </tr>
+                <tr>
+                    <td>Month:</td>
+                    <td><input type="month" name="month" placeholder="2020-12" min="2020-12" max="2025-12"></td>
+                </tr>
+                <tr>
+                    <td>Range:</td>
+                    <td><input type="range" name="num" value="80"></td>
+                </tr>
+                <tr>
+                    <td>Min_Range:</td>
+                    <td><input type="range" name="num1" onchange="result.value=parseInt(num1.value)">
+                        <output name="result"></output>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Max_Range:</td>
+                    <td><input type="range" name="num2" onchange="output.value=parseInt(num2.value)">
+                        <output name="output"></output>
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="button" name="button" value="Total range" onclick="out.value=parseInt(num1.value)+ParseInt(num2.value)" ></td>
+                    <td> <output name="out"></output></td> 
+                </tr>
+                <tr>
+                    <td>Date-Time:</td>
+                    <td><input type="datetime-local" name="datetime"></td>
+                </tr>
+                <tr>
+                    <td>Color:</td>
+                    <td><input type="color" name="color"></td>
+                </tr>
+                <tr>
+                    <td> courses: </td>
+                    <td> <select name="courses" multiple size="4">
+                            <option value="">--select--</option>
+                            <option value="">B.Tech</option>
+                            <option value="">BHMS</option>
+                            <option value="">B.Com</option>
+                            <option value="">Art</option>
+                            <option value="">MBBS</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Subject:</td>
+                    <td><input list="subj" name="mysub">
+                        <datalist id="subj">
+                            <option >Science</option>
+                            <option value="509">english</option>
+                            <option value="Marathi20">Marathi</option>
+                            <option label="300">telgu</option>
+                        </datalist>
+                    </td>
+                    </tr>
+                <tr>
+                    <td> Cities:</td>
+                    <td> <input type="checkbox" name="cities" checked>Pune
+                        <input type="checkbox" name="cities">Aurangabad
+                        <input type="checkbox" name="cities">Nanded
+                        <input type="checkbox" name="cities">Mumbai
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><input type="button" name="regi" value="register"></td>
+                    <td><input type="button" name="reset" value="reset"></td>
+                    
+                </tr>
+                <tr>
+                    <td> <input type="button" name="select" value="Novalidate"> </td>
+                    <td> <input type="button" name="select" value="NewAction" formaction="gallery.html" formmethod="POST"></td>
+                </tr>
+
+            </form>
+        </table>
+    </fieldset>
+</body>
+
+</html>
