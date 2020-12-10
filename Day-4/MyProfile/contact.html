@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(38, 126, 138);
+        }
+        table{
+            height: 500px;
+            width: 600px;
+            padding: 20px;
+            background-color: rgb(203, 203, 224);
+        }
+        legend{
+            font-size: 30px;
+            color: darkblue;
+        }
+        tr{
+            font-size: 20px;
+        }
+        #new{
+            text-align: right;
+        }
+
+    </style>
+</head>
+
+<body>
+    <fieldset>
+        <legend align="Center">Contact Form</legend>
+        <table>
+            <form action="formtable.html">
+                <tr>
+                    <td>Enter Name:</td>
+                    <td> <input type="text" name="username" placeholder="enter name" required></td>
+                </tr>
+                <tr>
+                    <td>Enter Email:</td>
+                    <td> <input type="email" name="mail" placeholder="enter mail"></td>
+
+                </tr>
+                <tr>
+                    <td>Phone_Number:</td>
+                    <td><input type="tel" name="phnnumber" pattern="[0-9]{10}" required></td>
+                </tr>
+                <tr>
+                    <td> Gender:</td>
+                    <td><input type="radio" name="gender" checked>Male
+                        <input type="radio" name="gender">Female </td>
+                </tr>
+
+
+                <tr>
+                    <td> Other Details:</td>
+                    <td><textarea name="details" cols="30" rows="10"></textarea></td>
+
+                </tr>
+                <tr>
+              <td id="new"> <input type="submit" value="submit"></td>
+            </tr>
+            </form>
+        </table>
+    </fieldset>
+
+</body>
+
+</html>

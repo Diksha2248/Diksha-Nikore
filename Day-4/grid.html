@@ -1,0 +1,127 @@
+<style>
+    body {
+        background-image: url('MyProfile/images/photo1jpg.jpg');
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .item1 {
+        grid-area: header;
+        font-size: 40px;
+        color: rgb(77, 69, 37);
+    }
+
+    .item2 {
+
+        margin-top: 80px;
+        grid-area: menu;
+        height: 400px;
+        width: 300px;
+    }
+
+    #menu li {
+        margin: 25px;
+        font-size: 20px;
+        background-color: rgb(21, 34, 26);
+        padding: 10px;
+        width: 100px;
+        border-radius: 20px;
+
+
+    }
+
+    .item3 {
+        grid-area: main;
+        background-color: rgb(14, 27, 14);
+        border: solid 2px rgb(57, 102, 57);
+        border-radius: 30px;
+        color: rgb(231, 211, 131);
+        font-size: 25px;
+        padding: 30px;
+       }
+       .item3 p{
+
+           padding: 20px;
+           margin: 20px;
+       }
+
+    .item4 {
+        grid-area: right;
+    }
+
+    .item5 {
+        margin-top: 50px;
+        grid-area: footer;
+        font-size: 20px;
+        color: rgb(10, 44, 23);
+        width: 800px;
+
+    }
+
+    .container {
+        display: grid;
+        grid-template-areas:
+            'header header header header header header'
+            'menu main main main right right'
+            'menu footer footer footer footer footer';
+        grid-gap: 10px;
+        /* background-color: indigo; */
+        padding: 10px;
+
+    }
+
+    .container>div {
+
+        text-align: center;
+        padding: 20px 0;
+
+    }
+
+    #menu {
+        list-style-type: none;
+        text-align: left;
+    }
+
+    a {
+        text-decoration: none;
+        color: rgb(231, 211, 131);
+        ;
+    }
+</style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item1">
+            <header>
+                <strong> Welcome to My World</strong>
+            </header>
+        </div>
+
+        <div class="item2">
+            <ul id="menu">
+                <li><a href="MyProfile/about.html">About Me</a></li>
+                <li><a href="MyProfile/profile.html">Profile</a></li>
+                <li><a href="MyProfile/gallery.html">Gallery</a></li>
+                <li><a href="MyProfile/contact.html">Contact us</a></li>
+            </ul>
+        </div>
+
+        <div class="item3">
+            <h3><a href="MyProfile/register.html">Register Now</a></h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero ipsam distinctio amet eaque aliquid saepe
+                assumenda labore magnam maiores placeat harum similique alias cupiditate repellendus aut eum, ab libero
+                et rerum autem, nesciunt excepturi ipsa asperiores cumque! Exercitationem tempore, architecto id minima
+                quibusdam nulla molestias debitis temporibus fuga quos. Lorem ipsum, dolor sit amet consectetur
+                adipisicing elit. Illo soluta facilis, dolorum perspiciatis, dignissimos saepe odit perferendis, ex
+                molestias impedit tenetur. Facilis cumque earum ipsum nisi non numquam eaque beatae?</p>
+
+        </div>
+
+        <div class="item4">
+            <img src="images/photo16.jpg" height="400px" width="250px">
+        </div>
+
+        <div class="item5">DK World</div>
+    </div>
