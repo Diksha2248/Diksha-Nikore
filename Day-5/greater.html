@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var n1 = parseInt(prompt('enter number 1'));
+        var n2 = parseInt(prompt('enter number 2'));
+        var n3 = parseInt(prompt('enter number 3'));
+        if(isNaN(n1)&&isNaN(n2)&&isNaN(n3))
+        {
+            alert('enter number again!')
+            document.write('enter number again')
+        }
+      else{ 
+        var result = n3 > ((n1 > n2) ? n1 : n2) ? n3 : ((n1 > n2) ? n1 : n2);
+        document.write('Greater number is: ', result)
+        }
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

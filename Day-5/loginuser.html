@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        usernames = ['monuu', 'tony', 'rinku', 'ram', 'swati']
+        name = prompt('enter name')
+
+        function loginUser() {
+            for (key in usernames) {
+                if (usernames[key] == name) {
+                    document.getElementById('mydiv').innerHTML = 'Welcome....' + name;
+                    break;
+                }
+                if (usernames[key] != name) {
+                    document.getElementById('mydiv').innerHTML = 'Wrong username try again';
+                }
+            }
+
+        }
+    </script>
+</head>
+
+<body>
+    <input type="button" value="click me" id="username" onclick="loginUser()">
+    <br>
+    <br>
+    <div id="mydiv" style="background-color: violet;"></div>
+</body>
+
+</html>
