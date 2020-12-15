@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+       var Mobile=['OPPO','Vivo','Redmi','Iphone']
+       var TV=['Mi','SamSung','LG','Sony']
+       var Laptop=['HP','Lenovo','Dell']
+
+       function func(){
+           object=document.getElementById('obj').value;
+           var new1=document.getElementById('new');
+           switch(object){
+          case 'Mobile':
+               new1.innerHTML='Welcome to our showroom <br>'
+               Mobile.forEach(function(element)
+               {
+                   new1.innerHTML+=element+'<br>';
+               });
+               break;
+          case 'TV':
+              new1.innerHTML='Welcome to our showroom <br>'
+               TV.forEach(function(element)
+               {
+                   new1.innerHTML+=element+'<br>';
+               });
+               break;
+          case 'Laptop':
+              new1.innerHTML='Welcome to our showroom <br>'
+               Laptop.forEach(function(element)
+               {
+                   new1.innerHTML+=element+'<br>';
+               });
+        
+           }
+       }
+    </script>
+</head>
+<body>
+    <select onchange="func()" id="obj">
+        <option>--select--</option>
+        <option value="Mobile">Mobile</option>
+        <option value="TV">TV</option>
+        <option value="Laptop">Laptop</option>
+    </select>
+
+    <div id="new" style="background-color: cyan;"></div>
+   
+</body>
+</html>
