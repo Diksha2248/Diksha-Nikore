@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+              text-align: center;
+        }
+         #area{
+            background-color: rgb(161, 231, 210);
+            border-radius: 5px;
+            border: solid 10px rgba(17, 9, 9, 0.753);
+
+        }
+       
+        table{
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 5px;
+            border: solid rgba(0, 0, 0, 0.486);
+            background-color: rgb(119, 153, 167);
+        }
+        h3{
+            font-size: 35px;
+        }
+        .btn1{
+             background-color: rgb(14, 59, 85);
+             color: rgb(207, 136, 136);
+        }
+
+        #btn2{
+            background-color: rgb(238, 13, 13);
+        }
+        #btn3{
+            background-color: rgb(9, 78, 43);
+            color: rgb(236, 152, 26);
+        }
+        .sym{
+            background-color: rgb(21, 127, 180);
+        }
+    </style>
+    <script>
+       
+       
+    </script>
+</head>
+
+<body>
+
+    <h3>Scientific Calculator</h3>
+    <br>
+    <br>
+
+    <form name="calculator">
+        <textarea  name="text" cols="29" rows="5" id="area" disabled > </textarea>
+    
+    <table border="solid" cellpadding="10" cellspacing="5" >
+
+        <!-- <tr>
+            <td colspan=5><input id="btn" name="display" type="text">
+            </td>
+        </tr> -->
+        <tr>
+            <td><input class="sym" type="button" value="^" OnClick="calculator.area.value+='Math.pow('">
+        </td>
+
+            <td><input class="sym" type="button" value="(" OnClick="calculator.area.value+='('">
+        </td>
+
+            <td><input class="sym" type="button" value=")" OnClick="calculator.area.value+=')'">
+        </td>
+
+            <td><input id="btn2" type="button" value="C" OnClick="calculator.area.value=''">
+        </td>
+
+        </tr>
+        <tr>
+
+            <td><input class="btn1" type="button" value="sin" OnClick="calculator.area.value='Math.sin('">
+            </td>
+
+            <td><input class="btn1" type="button" value="cos" OnClick="calculator.area.value='Math.cos('">
+            </td>
+
+            <td><input class="btn1" type="button" value="tan" OnClick="calculator.area.value='Math.tan('">
+            </td>
+
+            <td><input class="sym" type="button" value="%" OnClick="calculator.area.value+='%'">
+            </td>
+
+        </tr>
+        <tr>
+            <td><input id="btn" type="button" value="7" OnClick="calculator.area.value+='7'">
+            </td>
+
+            <td><input id="btn" type="button" value="8" OnClick="calculator.area.value+='8'">
+            </td>
+
+            <td><input id="btn" type="button" value="9" OnClick="calculator.area.value+='9'">
+            </td>
+
+            <td><input class="sym" type="button" value="*" OnClick="calculator.area.value+='*'">
+            </td>
+
+
+        </tr>
+        <tr>
+            <td><input id="btn" type="button" value="4" OnClick="calculator.area.value+='4'">
+            </td>
+
+            <td><input id="btn" type="button" value="5" OnClick="calculator.area.value+='5'">
+            </td>
+
+            <td><input id="btn" type="button" value="6" OnClick="calculator.area.value+='6'">
+            </td>
+
+            <td><input class="sym" type="button" value="-" OnClick="calculator.area.value='-'">
+            </td>
+        </tr>
+
+        <tr>
+            <td><input id="btn" type="button" value="1" OnClick="calculator.area.value+='1'">
+            </td>
+
+            <td><input id="btn" type="button" value="2" OnClick="calculator.area.value+='2'">
+            </td>
+
+            <td><input id="btn" type="button" value="3" OnClick="calculator.area.value+='3'">
+            </td>
+
+            <td><input class="sym" type="button" value="+" OnClick="calculator.area.value+='+'">
+            </td>
+        </tr>
+        <tr>
+            <td><input id="btn" type="button" value="0" OnClick="calculator.area.value+='0'">
+            </td>
+            <td><input class="sym" type="button" value="." OnClick="calculator.area.value+='.'">
+            </td>
+
+            <td> <input type="button" id="btn3" value="=" OnClick="calculator.area.value=eval(calculator.area.value)"></td>
+
+            <td><input class="sym" type="button" value="/" OnClick="calculator.area.value+='/'">
+            </td>
+
+        </tr>
+    </table>
+</form>
+</body>
+
+</html>
